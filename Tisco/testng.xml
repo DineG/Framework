@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LoginToTOO">
+
+    <test name="TestTOO">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Login">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="Url" value="https://qa1.nonprod.tenna.com"/>
+
+    <test name="TestTOO">
+        <classes>
+            <class name="LoginToTOO"/>
+        </classes>
+    </test>
+    <test name="Test">
+        <classes>
+            <class name="LoginToTOO"/>
+        </classes>
+    </test>
+    <test name="Test">
+        <classes>
+            <class name="LoginToTOO"/>
+        </classes>
+    </test>
+
+</suite>-->
+
