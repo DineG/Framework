@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Grouping">
+
+    <groups>
+        <run>
+            <include name="login"/>
+            <include name="basic"/>
+            <exclude name="regression"/>
+        </run>
+    </groups>
+
+
+    <test name="login test">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.LoginTestDDT"/>
+            <class name="testCases.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
+

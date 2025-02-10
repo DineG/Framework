@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TOO">
+
+   <!-- <listeners>
+        <listener class-name="utils.ExtentReportManager"/>
+    </listeners>-->
+
+
+    <test name="logintest_chrome">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.LoginTestDDT"/>
+        </classes>
+    </test>
+
+    <!--<test name="logintest_edge">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testCases.LoginTestDDT"/>
+        </classes>
+    </test>
+
+    <test name="logintest_firefox">
+        <parameter name="os" value="windows"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testCases.LoginTestDDT"/>
+        </classes>
+    </test>-->
+
+</suite>
+
