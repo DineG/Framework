@@ -7,12 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class AssetsListPage extends BasePage {
    Actions act;
-
     public AssetsListPage(WebDriver driver){
         super(driver);
         act = new Actions(driver);
     }
-
 
     @FindBy(xpath = "//*[@role='button']")
     WebElement sidePanel;
@@ -26,7 +24,6 @@ public class AssetsListPage extends BasePage {
     @FindBy(xpath = "//div[@data-testid='FeatureHeader']//span[.='Assets']")
     WebElement featureBarText;
 
-
     public void hoverSidePanel(){
         act.moveToElement(sidePanel).perform();
     }
@@ -34,20 +31,16 @@ public class AssetsListPage extends BasePage {
     public void clickPanelPin(){
         pinIcon.click();
     }
-
+   
     public void clickLogout(){
         btn_logout.click();
     }
-
+   
     public String assetFeatureBar() {
-
         try {
             return featureBarText.getText();
         } catch (Exception e) {
-
             return e.getMessage();
         }
-
     }
-
 }
